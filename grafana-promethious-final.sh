@@ -168,7 +168,7 @@ scrape_configs:
         port: 9100
         filters:
           - name: "tag:Name"
-            values: ["node-server"]
+            values: ["hvrapp"]
     relabel_configs:
       - source_labels: [__meta_ec2_private_ip]
         regex: (.*)
